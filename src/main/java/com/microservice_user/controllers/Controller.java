@@ -18,7 +18,7 @@ public class Controller {
         return bo.findByNameAndPassword(user);
     }
 
-    @PostMapping(value = "register")
+    @PostMapping(value = "/register")
     public void register(@RequestBody UserDTO user){
         bo.save(user);
     }

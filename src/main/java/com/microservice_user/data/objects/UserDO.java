@@ -3,7 +3,7 @@ package com.microservice_user.data.objects;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "users")
+@Table(name = "users", schema = "", catalog = "")
 public class UserDO {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
